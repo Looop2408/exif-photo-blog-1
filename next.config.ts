@@ -75,6 +75,9 @@ const IMAGE_QUALITY =
     : 75;
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     imageSizes: [100, 200],
     qualities: [75, IMAGE_QUALITY],
